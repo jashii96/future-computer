@@ -8,10 +8,10 @@ function isEmail($email) {
 }
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
-$position_post  = $_POST['position_post'] 
 $first_name     = $_POST['first_name'];
 $last_name     = $_POST['last_name'];
-$email    = $_POST['email'];
+$email    = $_POST['company'];
+$phone    = $_POST['phone'];
 $comments = $_POST['comments'];
 
 if(trim($first_name) == '') {
@@ -40,7 +40,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "example@yourdomain.com";
+$address = "fcrourkela@gmail.com";
 
 
 // Configuration option.
