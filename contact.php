@@ -70,7 +70,7 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Email has sent successfully, echo a success page.
-	echo ('<!DOCTYPE html>
+	echo '<!DOCTYPE html>
 	<html lang="en">
 	<head>
 	<!-- basic -->
@@ -206,23 +206,23 @@ if(mail($address, $e_subject, $msg, $headers)) {
 		  </div>
 		</div>
 	  </div>
-	</div>
-	<div class="section padding_layout_1">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-md-12">
-			<div class="full">
-			  <div class="main_heading text_align_left">
-				<h2 style="text-align: center;">Email Sent Successfully!!!</h2>
-				<p>Thank you <strong>$first_name</strong>, your message has been submitted to us.</p>
+	</div>';
+	echo("<div class='section padding_layout_1'>
+	  <div class='container'>
+		<div class='row'>
+		  <div class='col-md-12'>
+			<div class='full'>
+			  <div class='main_heading text_align_left'>
+				<h2 style='text-align: center;'>Email Sent Successfully!!!</h2>
+				<p style='text-align: center;'>Thank you <strong>$first_name</strong>, your message has been submitted to us.</p>
 			  </div>
 			</div>
 		  </div>
 		</div>
 		</div>
-	  </div>
+	  </div>");
 	
-	<!-- Modal -->
+echo	'<!-- Modal -->
 	<div class="modal fade" id="search_bar" role="dialog">
 	  <div class="modal-dialog">
 		<!-- Modal content-->
@@ -247,8 +247,9 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	  </div>
 	</div>
 	<!-- End Model search bar -->
-	<!-- footer -->
-	<footer class="footer_style_2">
+	<!-- footer -->';
+
+	echo'<footer class="footer_style_2">
 	  <div class="container-fuild">
 		<div class="row">
 		  <div class="map_section">
@@ -449,7 +450,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 		</script>
 	</body>
 	</html>
-	');
+	';
     
 } else {
 
