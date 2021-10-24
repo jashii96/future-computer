@@ -70,11 +70,12 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Email has sent successfully, echo a success page.
-
+    echo "<a href='it_home.html' style='text-align:right;'>Home</a>";
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
 	echo "<h1>Email Sent Successfully.</h1>";
 	echo "<p>Thank you <strong>$first_name</strong>, your message has been submitted to us.</p>";
+	echo "<a href='make_appointment.html'>Ready For Another Response</a>";
 	echo "</div>";
 	echo "</fieldset>";
 
